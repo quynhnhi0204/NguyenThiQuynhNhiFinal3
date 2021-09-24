@@ -1,0 +1,362 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    src: url("../fonts/Campanile.ttf");
+    font-family: 'Campanile';
+}
+@font-face {
+    src: url("../fonts/Laila-Regular.ttf");
+    font-family: 'Laila';
+}
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.clear{
+	clear: both;
+	height: 0;
+}
+.container{
+	width: 1200px;
+	margin: 0 auto;
+}
+.container-fluid{ width: 100%}
+.col-1 {width: 8.33%; }
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"] {
+  float: left;
+  padding: 0 15px;
+}
+#wrapper{
+	width: 100%;
+}
+.t-header{
+	color: rgb(195, 172, 121);
+	font-family: 'Campanile';	
+	text-align: center;
+	font-size: 50px;
+	padding: 1em 0;
+	text-shadow: 3px 3px 3px #CD0A0A;
+}
+.t-center{text-align: center} 
+.t-trang{color: #fff;}
+.img-100{
+	width: 100%;
+	height: auto;}
+
+
+/* -------------------- header -------------------- */
+.header{
+	float: left;
+	width: 100%;
+	height: 150px;
+	background: url(../img/bg.jpg);
+	/* background-color: black; */
+	margin: 0 auto;
+}
+.logo{
+	width: 50%;
+	height: 120px;
+	float: left;
+	/* background: purple; */
+}
+.logo img{
+	width: 100px;
+}
+/* ---- menu ---- */
+.navbar{
+	width: 40%;
+	float: left;
+	height: auto;
+	text-transform: uppercase;
+	font-family: 'Campanile';
+	font-size: 24px;
+	margin-top: 2em;
+}
+.navbar a{
+	float:right;
+	color: white;
+	text-align: center; 
+	padding: 10px 2em ;
+	text-decoration: none; 
+} 
+ .dropdown {
+	float: left;
+	text-transform: uppercase;
+	overflow: hidden;
+	font-family: 'Campanile';
+ }
+ .dropbtn{
+	font-family: 'Campanile';
+	text-transform: uppercase;
+	font-size: 24px;
+ }
+ .dropdown .dropbtn {
+	border: none; 
+	color: white;  padding: 10px 16px;
+	background-color: inherit;
+	margin: 0; 
+ }
+ .navbar a:hover, .dropdown:hover .dropbtn
+ {
+	filter: brightness(50%);
+ }
+ .dropdown-content {
+	display: none; 
+	position: absolute; 
+	background-color: rgb(16, 21, 27);
+	min-width: 160px; z-index: 1;
+	box-shadow: 0px 8px 16px 0px #FFAE00;
+	font-family: 'Campanile';
+}
+ .dropdown-content a {
+	float: none; color: #fff;display: block;
+	padding: 12px 16px; text-decoration: none; font-family: 'Campanile';
+	text-align: left; }
+ .dropdown-content a:hover {
+	background-color: #FFAE00;
+	color: #CD0A0A;
+}
+ .dropdown:hover .dropdown-content {
+	display: block;
+ }
+form{
+	float: right;
+	padding: 0 3em;
+	margin-top: 3em;
+}
+.btnSearch{
+	float: right;
+	margin-left: 5px;
+}
+.input{
+	height: 2.5em;
+	border-radius: 5px;
+}
+/* -------------------- main -------------------- */
+.main{
+	/* background-color: green; */
+	float: left;
+	width: 100%;
+	height: auto;
+	background-image: url(../img/bg.jpg);
+	color: #fff;
+}
+.banner{
+	width: 100%;
+	height: 700px;
+	background: url(../img/banner\ 4.jpg);
+	filter: brightness(50%);
+	background-repeat: no-repeat;
+	background-size:100%;
+}
+.banner h1{
+	text-align: center;
+	font-size: 40px;
+	font-family: 'Campanile';
+	padding-top: 7em;
+}
+.section2{
+	height: 1000px;
+	padding-top: 2em;
+}
+.section2 p{
+	font-size: 15px;
+}
+.left{
+	width: 40%;
+	height: 750px;
+	float: left;
+	padding: 32px 24px;
+	box-sizing: border-box;
+	/* background-color: orange; */
+}
+.left img{
+	width: 100%;
+	float: left;
+	height: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.right{
+	padding: 32px 24px;
+	height: 750px;
+	/* background-color: orchid; */
+	width: 58%;
+	float: right;
+	box-sizing:border-box;
+	font-family: 'Laila', sans-serif;
+}
+strong:hover{
+	color: rgb(195, 172, 121);
+}
+.section3{
+	height: 1100px;
+	/* background-color: purple; */
+	padding-top: 2em;
+}
+#idShop{
+	padding-top: 5px
+}
+#idShop .nd{ 
+	position: relative; 
+	text-transform: uppercase;
+	padding-bottom: 20px
+}
+#idShop .chitiet{
+	font-family: 'Laila', sans-serif;
+	font-weight: bold;
+	background: #000; 
+	color:#FFAE00; 
+	padding: 10px; 
+	height: 50px; 
+	font-size: 20px} 
+#idShop .nd:hover >.chitiet{
+	background: #FFAE00; 
+	color:#000; 
+	font-weight: bold}
+.section4{
+	height: 1200px;
+	/* background-color: olive; */
+}
+.thumbnail {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    /* border: 1px solid #e5e5e5; */
+}
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    transition-duration: 0.5s;
+}
+
+.thumbnail img:hover {
+    transform: scale(2.5);
+}
+.thumbnail h1{
+	font-family: 'Campanile';
+	padding-top: 2em;
+	color: #fff;
+}
+.thumbnail h1:hover{
+	color: rgb(195, 172, 121);
+}
+.ndung1 h1{
+	text-transform: uppercase;
+}
+.ndung2 h1{
+	text-transform: uppercase;
+}
+.ndung3 h1{
+	text-transform: uppercase;
+}
+.section4 p{
+	font-family: 'Laila', sans-serif;
+	padding-top: 2em;
+}
+.section5{
+	height: 1000px;
+	/* background-color: olive; */
+}
+.left-sec5{
+	float: left;
+	width: 30%;
+	/* height: 720px; */
+	padding: 5em;
+	border: #FFAE00 2px solid;
+}
+#idNews .col-12{
+	padding: 10px;
+	font-size: 20px;
+}
+marquee{
+	float: left;
+	margin-top: -5em;
+}
+.right-sec5{
+	float: right;
+	width: 65%;
+	/* height: 720px; */
+}
+#idNews button{
+	width: 100px;
+	height: 30px;
+	margin-top: 3em;
+	font-weight: bold; 
+	font-size: 20px;
+	text-align: center;
+	border:  2px solid #FFAE00;
+	background-color: rgb(16, 21, 27);
+}
+.btnOK a{
+	text-decoration: none;
+	color: #fff;
+}
+.bntOK a:hover{
+	background-color: #FFAE00;
+	color: #fff;
+	text-decoration: none;
+}
+.tren{
+	float: left;
+	width: 100%;
+	height: 60%;
+}
+.tren img{
+	width: 80%;
+	margin-left: 10%;
+}
+.duoi{
+	float: left;
+	margin-top: 10px;
+	height: 25%;
+	width: 100%;
+}
+.duoi-trai{
+	width: 49%;
+	height: 250px;
+	float: left;
+	border:  2px dashed #FFAE00;
+	text-align: center;
+	letter-spacing: 0.3em;
+	padding: 1em;
+}
+.duoi-phai{
+	width: 49%;
+	height: 250px;
+	float: right;
+	border:  2px dashed #FFAE00;
+	text-align: center;
+	letter-spacing: 0.3em;
+	padding: 1em;
+}
+/* -------------------- footer -------------------- */
+.footer{
+	width: 100%;
+	height: 300px;
+	background-image: url(../img/bg.jpg);
+	/* border-top: 2px solid #DB9032; */
+	color: #fff;
+}
+.AboutUs{
+	font-family: 'Campanile';
+	text-align: center;
+	text-transform: uppercase;
+	padding: 1em 0;
+	text-shadow: 3px 3px 3px #CD0A0A;
+}
+.footer p{
+	font-family: 'Laila', sans-serif;;
+}
